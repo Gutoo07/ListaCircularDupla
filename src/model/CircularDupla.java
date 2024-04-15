@@ -60,7 +60,7 @@ public class CircularDupla<T> {
 		do {
 			total_elementos++;
 			buffer = buffer.getProximo();
-		} while ( buffer!= this.ultimo_elemento);
+		} while ( buffer != this.ultimo_elemento );
 		return total_elementos;
 	}
 	@Override
