@@ -13,7 +13,7 @@ public class CircularDuplaController {
 		lista.append(2);
 		lista.append(3);
 		
-		//lista.remove(lista.getLast().getProximo());
+		lista.remove(lista.getLast().getProximo());
 
 		return lista.toString();
 	}

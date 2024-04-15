@@ -3,7 +3,7 @@ import java.lang.Exception;
 import model.No;
 
 public class CircularDupla<T> {
-	private No<T> ultimo_elemento = null;
+	private No<T> ultimo_elemento;
 	
 	public void append (T elemento) {
 		No<T> novo = new No<>(elemento);
@@ -70,6 +70,7 @@ public class CircularDupla<T> {
 		}
 		StringBuilder builder = new StringBuilder("[");
 		No<T> buffer = this.ultimo_elemento;
+		builder.append(buffer.getValor());
 		while ( buffer.getProximo() != this.ultimo_elemento) {
 			builder.append(",");
 			buffer = buffer.getProximo();
